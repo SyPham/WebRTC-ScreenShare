@@ -5,10 +5,10 @@ const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    redirectTo: 'support'
+    redirectTo: 'video-call'
   },
   {
-    path: 'support',
+    path: 'video-call',
     loadChildren: () => import('./support/support.module').then(m => m.SupportModule)
   }
 ];
